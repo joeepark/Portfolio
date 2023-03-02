@@ -1,14 +1,13 @@
+import Image from 'next/image';
+import portrait from '/public/portrait3.jpg';
+
 export default function Intro() {
   return (
     <section className="intro">
       <span>`{'<intro>'}`</span>
-      <div className="intro--content">
-        <h1>Software Engineer</h1>
-        <h2>Skilled Frontend Developer</h2>
-      </div>
-      <div className="intro--profile-image">
-        <div className="image"></div>
-      </div>
+      <Image src={portrait} alt="portrait image" height={1300}/>
+      <h2>Software Engineer</h2>
+      <h3>Frontend Developer</h3>
       <span>`{'</intro>'}`</span>
     </section>
   );

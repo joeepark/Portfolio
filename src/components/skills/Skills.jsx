@@ -12,15 +12,15 @@ export default function Skills() {
   return (
     <section className="skills">
       <span>`{'<skills>'}`</span>
-      <h3 className="code-header">Code</h3>
-      <div className="code-content">
-        <div className="code-icons">
+      <h3 className="skills__code-header">Code</h3>
+      <div className="skills__code-content">
+        <div className="skills__code-icons">
           <Image src={javascript} alt="javscript icon" height={60} />
           <Image src={react} alt="react icon" height={60} />
           <Image src={css} alt="css icon" height={60} />
           <Image src={html} alt="html icon" height={60} />
         </div>
-        <div className="code-icons">
+        <div className="skills__code-icons">
           <Image src={typescript} alt="typescript icon" height={60} />
           <Image src={node} alt="node icon" height={60} />
           <Image src={postgreSQL} alt="postgresql icon" height={60} />
@@ -35,9 +35,9 @@ export default function Skills() {
           <li>Git/Github</li>
         </ul>
       </div>
-      <div className="design-image"></div>
-      <h3 className="design-header">UX/UI Design</h3>
-      <div className="photography-header">
+      <div className="skills__design-image"></div>
+      <h3 className="skills__design-header">UX/UI Design</h3>
+      <div className="skills__photography-header">
         <h3>Photoshop</h3>
         <h3>Lightroom</h3>
       </div>

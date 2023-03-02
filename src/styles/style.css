@@ -8,10 +8,8 @@
 }
 
 html {
-  margin: 0 auto;
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
-  max-width: 1500px;
 }
 @media screen and (max-width: 768px) {
   html {
@@ -25,9 +23,8 @@ html {
 }
 
 main {
-  height: 100vh;
   font-size: 1.8rem;
-  padding: 1em;
+  overflow-x: hidden;
 }
 
 a {
@@ -50,13 +47,15 @@ li {
 }
 
 .intro {
-  height: 91%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
+  height: 90vh;
   padding: 1em;
-  margin-bottom: 15em;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .intro span:first-child {
   grid-row: 1;
@@ -67,26 +66,31 @@ li {
   grid-column: 5;
   margin-left: auto;
 }
-.intro .intro--content {
-  width: 100%;
-  grid-row: 2;
-  grid-column: 1/4;
-  text-align: center;
+.intro img {
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 45, 0, 1);
+  position: absolute;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
 }
-.intro .intro--profile-image {
-  width: 100%;
+.intro h2 {
+  grid-row: 2;
+  grid-column: 1/3;
+  font-size: 5rem;
+  font-weight: 500;
+}
+.intro h3 {
   grid-row: 2;
   grid-column: 4/6;
-}
-.intro .image {
-  width: 200px;
-  height: 200px;
-  background-color: gray;
-  border-radius: 50%;
+  font-size: 5rem;
+  transform: translateX(10%);
+  font-weight: 500;
 }
 
 .skills {
-  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
   display: grid;
   grid-template-columns: 150px 1fr 200px;
   grid-template-rows: 20px 1fr 1fr 1fr 20px;
@@ -103,32 +107,32 @@ li {
   grid-column: -2;
   margin-left: auto;
 }
-.skills .code-header {
+.skills__code-header {
   grid-row: 2;
   grid-column: 1;
 }
-.skills .code-content {
+.skills__code-content {
   grid-row: 2;
   grid-column: 2/4;
   display: flex;
   flex-direction: column;
   gap: 3em;
 }
-.skills .code-content ul {
+.skills__code-content ul {
   display: flex;
   justify-content: space-around;
   font-size: 1.5rem;
   padding: 0 4.5em;
 }
-.skills .code-icons {
+.skills__code-icons {
   display: flex;
   justify-content: space-around;
 }
-.skills .design-header {
+.skills__design-header {
   grid-row: 3;
   grid-column: 3;
 }
-.skills .design-image {
+.skills__design-image {
   grid-row: 3;
   grid-column: 1/3;
   height: 100%;
@@ -138,7 +142,7 @@ li {
   background-repeat: no-repeat;
   opacity: 90%;
 }
-.skills .photography-header {
+.skills__photography-header {
   grid-row: 4;
   grid-column: 1;
 }
