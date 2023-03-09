@@ -26,14 +26,6 @@ export default function Skills() {
           <Image src={postgreSQL} alt="postgresql icon" height={60} />
           <Image src={mongoDB} alt="mongodb icon" height={60} />
         </div>
-        <ul>
-          <li>Next.js</li>
-          <li>Express.js</li>
-          <li>GraphQL</li>
-          <li>Tailwind</li>
-          <li>styled-components</li>
-          <li>Git/Github</li>
-        </ul>
       </div>
       <div className="skills__design-image"></div>
       <h3 className="skills__design-header">UX/UI Design</h3>
