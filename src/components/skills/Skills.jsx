@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import css from '/public/css.png';
-import html from '/public/html.png';
-import javascript from '/public/javascript.png';
-import node from '/public/nodejs.png';
-import postgreSQL from '/public/postgreSQL.png';
+import css from '/public/css.svg';
+import html from '/public/html.svg';
+import javascript from '/public/javascript.svg';
+import node from '/public/nodejs.svg';
+import postgreSQL from '/public/postgreSQL.svg';
 import react from '/public/react.png';
-import typescript from '/public/typescript.png';
+import typescript from '/public/typescript.svg';
 import mongoDB from '/public/mongoDB.svg';
 
 export default function Skills() {

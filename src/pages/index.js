@@ -1,7 +1,10 @@
+import Contact from '@/components/contact/Contact'
 import Intro from '@/components/intro/Intro'
 import Banner from '@/components/layout/Banner'
 import CTA from '@/components/layout/CTA'
 import Skills from '@/components/skills/Skills'
+import Testimonials from '@/components/testimonials/testimonials'
+import Work from '@/components/work/Work'
 import Head from 'next/head'
 
 export default function Home() {
@@ -13,10 +16,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Intro />
-        <Banner />
-        <Skills />
-        <CTA />
+      <Intro />
+      <Banner />
+      <Skills />
+      <CTA />
+      <Work />
+      <Testimonials />
+      <Contact />
     </>
   )
 }
