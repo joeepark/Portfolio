@@ -11,7 +11,7 @@ import mongoDB from '/public/mongoDB.svg';
 export default function Skills() {
   return (
     <section className="skills">
-      <span>`{'<skills>'}`</span>
+      {/* <span>`{'<skills>'}`</span> */}
       <h3 className="skills__code-header">Code</h3>
       <div className="skills__code-content">
         <div className="skills__code-icons">
@@ -33,7 +33,7 @@ export default function Skills() {
         <h3>Photoshop</h3>
         <h3>Lightroom</h3>
       </div>
-      <span>`{'</skills>'}`</span>
+      {/* <span>`{'</skills>'}`</span> */}
     </section>
   );
 }

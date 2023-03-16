@@ -1,7 +1,7 @@
 export default function Work() {
   return (
     <section className="work">
-      <span>`{'<work>'}`</span>
+      {/* <span>`{'<work>'}`</span> */}
       <div className="work__new-mozart">
         <h3>New Mozart School of Music</h3>
       </div>
@@ -14,7 +14,7 @@ export default function Work() {
       <div className="work__alotl">
         <h3>Alotl</h3>
       </div>
-      <span>`{'</work>'}`</span>
+      {/* <span>`{'</work>'}`</span> */}
     </section>
   );
 }

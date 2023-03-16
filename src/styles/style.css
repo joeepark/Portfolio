@@ -9,8 +9,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Inter", sans-serif;
-  scroll-snap-type: y mandatory;
+  font-family: "neue-montreal-light", sans-serif;
 }
 @media screen and (max-width: 768px) {
   html {
@@ -26,6 +25,13 @@ html {
 body {
   font-size: 1.8rem;
   overflow-x: hidden;
+}
+
+.wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  perspective: 300px;
 }
 
 a {
@@ -48,43 +54,43 @@ li {
 }
 
 .intro {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 20px 1fr 20px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
   padding: 1em;
   margin: 0 auto;
-  scroll-snap-align: start;
-  max-width: 1800px;
+  background-image: url("/mainbg.png");
+  z-index: 0;
+  position: relative;
+  transform-style: preserve-3d;
+  height: 100vh;
+  font-size: 4rem;
 }
-.intro span:first-child {
-  grid-row: 1;
-  grid-column: 1;
+.intro #blob {
+  position: absolute;
+  inset: 0;
+  top: 65%;
+  transform: translateZ(90px) scale(0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
 }
-.intro span:last-child {
-  grid-row: 3;
-  grid-column: 7;
-  margin-left: auto;
+.intro #text {
+  position: absolute;
+  height: 100vh;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: -15%;
+  transform: translateZ(0);
 }
 .intro h1 {
-  grid-row: 2;
-  grid-column: 2/5;
-  padding-left: 1em;
-  font-weight: 500;
-  font-size: 4.5rem;
+  font-size: 15rem;
 }
-.intro h1 div {
-  line-height: 1em;
-}
-.intro h1 div span:first-child {
-  font-size: 20rem;
-}
-.intro h1 div span:last-child {
-  font-size: 7rem;
-  margin-left: -0.1em;
-}
-.intro h1 > span:nth-of-type(1) {
+.intro h3 > span:nth-of-type(1) {
   background-color: #ff0f7b;
   background-image: linear-gradient(90deg, hsl(333deg, 100%, 53%) 0%, hsl(33deg, 94%, 57%) 100%);
   background-size: 100%;
@@ -94,16 +100,18 @@ li {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.intro h1 > span:nth-of-type(2) {
+.intro h3 > span:nth-of-type(2) {
   color: red;
 }
 
 .banner {
-  height: 50vh;
+  margin-top: 11em;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: center;
+  z-index: 0;
+  background-color: white;
 }
 
 .skills {
@@ -194,7 +202,7 @@ li {
   margin: 0 auto;
   scroll-snap-align: start;
   max-width: 1800px;
-  gap: 5em;
+  gap: 4em;
 }
 .work span:first-child {
   grid-row: 1;

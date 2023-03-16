@@ -1,7 +1,7 @@
 export default function Testimonials() {
   return (
     <section className="testimonials">
-      <span>`{'<testimonials>'}`</span>
+      {/* <span>`{'<testimonials>'}`</span> */}
       <p>
         Joseph is one of the most thoughtful and hardworking engineers I have met and consistently
         goes above and beyond to move the team forward. His uniquely strong combination of creative
@@ -27,7 +27,7 @@ export default function Testimonials() {
         he has taught me so much about being an engineer that not only excels technically but also
         compassionately.
       </p>
-      <span>`{'</testimonials>'}`</span>
+      {/* <span>`{'</testimonials>'}`</span> */}
     </section>
   );
 }
