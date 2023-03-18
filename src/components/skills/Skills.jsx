@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import css from '/public/css.svg';
+import css from '/public/css.png';
 import html from '/public/html.svg';
 import javascript from '/public/javascript.svg';
 import node from '/public/nodejs.svg';
@@ -60,7 +60,7 @@ export default function Skills() {
               onMouseLeave={() => setIsHovered(false)}
             />
           </Tilt>
-          <Image src={css} alt="css icon" height={60} />
+          <Image src={css} alt="css icon" height={60} className="css"/>
           <Image src={html} alt="html icon" height={60} />
         </div>
         <div className="skills__code-icons">

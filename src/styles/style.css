@@ -88,7 +88,13 @@ li {
   transform: translateZ(0);
 }
 .intro h1 {
-  font-size: 15rem;
+  font-size: 14rem;
+}
+.intro h2 {
+  font-size: 5rem;
+}
+.intro h3 {
+  font-size: 3rem;
 }
 .intro h3 > span:nth-of-type(1) {
   background-color: #ff0f7b;
@@ -189,6 +195,7 @@ li {
 
 .hovered.react {
   background-color: blue;
+  filter: invert(100%);
 }
 
 .cta {
