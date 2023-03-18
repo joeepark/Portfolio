@@ -40,6 +40,10 @@ export default function Skills() {
                 setIsHovered(true);
                 setHoveredColor(event.target.className);
               }}
+              onTouchStart={(event) => {
+                setIsHovered(true);
+                setHoveredColor(event.target.className);
+              }}
               onMouseLeave={() => setIsHovered(false)}
             />
           </Tilt>
