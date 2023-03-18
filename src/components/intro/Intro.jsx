@@ -10,11 +10,8 @@ export default function Intro() {
       </div>
       <div className="parllax_group" id="text">
         <h1>Joseph Park</h1>
-        <h2>highly motivated software engineer</h2>
-        <h3>
-          who likes <span>collaborative</span> and <span>creative</span> work to build something
-          amazing
-        </h3>
+        <h2>creative software engineer</h2>
+        <h3> delivering user-friendly products with a focus on <span>accessibility</span> and <span>inclusivity</span></h3>
       </div>
     </section>
   );

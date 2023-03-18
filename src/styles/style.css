@@ -9,7 +9,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "neue-montreal-light", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 @media screen and (max-width: 768px) {
   html {
@@ -111,7 +111,6 @@ li {
   justify-content: center;
   align-items: center;
   z-index: 0;
-  background-color: white;
 }
 
 .skills {
@@ -182,6 +181,14 @@ li {
 .skills__photography-header {
   grid-row: 4;
   grid-column: 2;
+}
+
+.hovered.javascript {
+  background-color: green;
+}
+
+.hovered.react {
+  background-color: blue;
 }
 
 .cta {
