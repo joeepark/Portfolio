@@ -3,7 +3,7 @@ import Intro from '@/components/intro/Intro'
 import Banner from '@/components/layout/Banner'
 import CTA from '@/components/layout/CTA'
 import Skills from '@/components/skills/Skills'
-import Testimonials from '@/components/testimonials/testimonials'
+import Testimonials from '@/components/testimonials/Testimonials'
 import Work from '@/components/work/Work'
 import Head from 'next/head'
 
